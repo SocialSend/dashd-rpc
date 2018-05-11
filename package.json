@@ -1,6 +1,6 @@
 {
-  "name": "@dashevo/dashd-rpc",
-  "description": "Dash Client Library to connect to Dash Core (dashd) via RPC",
+  "name": "socialsendd-rpc",
+  "description": "SocialSend Client Library to connect to SocialSend Core (socialsendd) via RPC",
   "version": "1.0.1",
   "author": {
     "name": "Stephen Pair",
@@ -29,12 +29,12 @@
     }
   ],
   "keywords": [
-    "dash",
+    "socialsend",
     "rpc"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/dashevo/dashd-rpc"
+    "url": "https://github.com/SocialSend/socialsendd-rpc"
   },
   "license": "MIT",
   "main": "lib/index.js",
@@ -53,7 +53,7 @@
     "sinon": "^1.12.2"
   },
   "bugs": {
-    "url": "https://github.com/dashevo/dashd-rpc/issues"
+    "url": "https://github.com/SocialSend/socialsendd-rpc/issues"
   },
-  "homepage": "https://github.com/dashevo/dashd-rpc"
+  "homepage": "https://github.com/SocialSend/socialsendd-rpc"
 }

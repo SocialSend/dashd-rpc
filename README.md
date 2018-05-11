@@ -1,18 +1,14 @@
-dashd-rpc.js
+socialsendd-rpc.js
 ===============
 
-[![NPM Package](https://img.shields.io/npm/v/dashd-rpc.svg?style=flat-square)](https://www.npmjs.org/package/@dashevo/dashd-rpc)
-[![Build Status](https://img.shields.io/travis/dashevo/dashd-rpc.svg?branch=master&style=flat-square)](https://travis-ci.org/dashevo/dashd-rpc)
-[![Coverage Status](https://img.shields.io/coveralls/dashevo/dashd-rpc.svg?style=flat-square)](https://coveralls.io/r/dashevo/dashd-rpc?branch=master)
-
-A client library to connect to Dash Core RPC in JavaScript.
+A client library to connect to SocialSend Core RPC in JavaScript.
 
 ## Get Started
 
-dashd-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
+socialsendd-rpc.js runs on [node](http://nodejs.org/), and can be installed via [npm](https://npmjs.org/):
 
 ```bash
-npm install dashd-rpc
+npm install SocialSend/socialsendd-rpc
 ```
 
 ## RpcClient
@@ -23,21 +19,21 @@ Arguments :
 	- user : (string - optional) - (default: 'user') - Set the user credential.
 	- pass : (string - optional) - (default: 'pass') - Set the password credential.
 	- host : (string - optional) - (default: '127.0.0.1') - The host you want to connect with.
-	- port : (integer - optional) - (default: 9998) - Set the port on which perform the RPC command.
+	- port : (integer - optional) - (default: 50050) - Set the port on which perform the RPC command.
 	
 ## Examples
 
 ```javascript
 var run = function() {
   var bitcore = require('bitcore');
-  var RpcClient = require('@dashevo/dashd-rpc');
+  var RpcClient = require('socialsendd-rpc');
 
   var config = {
     protocol: 'http',
     user: 'user',
     pass: 'pass',
     host: '127.0.0.1',
-    port: 19998
+    port: 51475
   };
 
   var rpc = new RpcClient(config);
@@ -84,13 +80,13 @@ var run = function() {
 
 You can dynamically access to the help of each method by doing
 ```
-const RpcClient = require('bitcoind-rpc-dash');
+const RpcClient = require('bitcoind-rpc');
 var client = new RPCclient({
     protocol:'http',
-    user: 'dash',
+    user: 'socialsend',
     pass: 'local321', 
     host: '127.0.0.1', 
-    port: 19998
+    port: 51475
 });
 
 var cb = function (err, data) {
